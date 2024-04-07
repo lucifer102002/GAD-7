@@ -1,0 +1,27 @@
+Module Module1 
+ 
+    Sub Main() 
+        Dim Array() As Integer = {12, 34, 56, 37, 78, 53, _ 
+98, 22, 19, 68} 
+        Dim Key As Integer 
+        Dim IsKeyFoundFlag As Boolean = False 
+ 
+        Console.WriteLine("Enter element to search: ") 
+        Key = Console.ReadLine() 
+ 
+        For i As Integer = 1 To Array.Length() - 1 
+            If Array(i) = Key Then 
+                IsKeyFoundFlag = True 
+            End If 
+        Next 
+ 
+        If IsKeyFoundFlag = True Then 
+            Console.WriteLine("Element present.") 
+        Else 
+            Console.WriteLine("Element absent.") 
+        End If 
+ 
+        Console.ReadKey() 
+    End Sub 
+ 
+End Module
